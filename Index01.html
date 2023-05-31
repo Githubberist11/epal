@@ -1,0 +1,843 @@
+<html>
+  <head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@300;400&family=Orelega+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family:  'Lora', serif;
+}
+.splash {
+  width: 1270px;
+  height: 318px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+url(https://i.postimg.cc/HkzKy5Jf/yyyy.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #FFFFFF, 0 0 80px #FFFFFF, 0 0 90px #FFFFFF, 0 0 100px #FFFFFF, 0 0 150px #000;
+}
+
+.splash-text{
+  animation: splash 5s ease 1s;
+}
+
+@keyframes splash{
+  from {
+    opacity: 0;
+    transform: scale(.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+}
+.navigation-bar{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    position: fixed;
+    background-image: url(https://i.postimg.cc/pTNvRVZG/new-head.jpg);
+    z-index: 10;
+}
+
+.navigation-bar ul{
+    float: right;
+    margin-right: 40px;
+}
+
+.navigation-bar ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navigation-bar ul li a{
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: 0.5s all ease;
+}
+
+.navigation-bar ul li a:hover{
+    border: 1px  solid red;
+}
+
+
+.navigation-bar label #menu, .navigation-bar label #cancel{
+    float: right;
+    margin-right: 40px;
+    font-size: 30px;
+    line-height: 80px;
+    color: #AA00FF;
+    display: none;
+}
+
+.navigation-bar #check{
+    display: none;
+}
+
+
+.banner-content{
+   background-image: url(https://i.postimg.cc/pTNvRVZG/new-head.jpg);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    padding-left: 40px;
+    background-image: url(https://i.postimg.cc/Z52CpQGY/ughhh.jpg);
+}
+
+
+.banner-content .container .text-content{
+    float: left;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.banner-content .container .text-content h1{
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: -30px;
+}
+
+.banner-content .container .text-content h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.banner-content .container .text-content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.banner-content .container .text-content .button{
+    padding: 0.6rem 2rem;
+    margin-right: 10px;
+    border: 1px solid red;
+}
+
+.banner-content .container .text-content .button:nth-of-type(1){
+    background-color: red;
+    color: white;
+}
+
+.banner-content .container .text-content .button:nth-of-type(2){
+    background-color: transparent;
+    color: white;
+}
+
+.banner-content .container .text-content .button:hover{
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
+}
+
+
+.banner-content .container .image-content{
+    float: right;
+    width: 55%;
+}
+.banner-content .image-content img{
+    width: 100%;
+    margin: 20px;
+}
+
+
+.about{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about .container{
+    width: 90%;
+}
+
+
+.about .container .image-content{
+    float: left;
+    width: 45%; 
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.about .container .image-content img{
+    width: 100%;
+    margin: -20px;
+}
+
+
+.about .container .text-content{
+    float: right;
+    width: 55%;
+}
+
+.about .container .text-content h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.about .container .text-content p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about .container .text-content .button{
+    padding: 0.6rem 2rem;
+    border: 1px solid white;
+    background-color: red;
+    color: white;
+}
+
+.about .container .text-content .button:hover{
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.3);
+}
+
+.services {
+    width: 100%;
+    min-height: 70vh;
+    padding-top: 80px;
+    position: relative;
+   background-color: black;
+}
+
+.services h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.3rem;
+    color: red;
+    margin-bottom: 20px;
+}
+.services h5 {
+ color: white;
+}
+
+.services .container{
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: red;
+}
+
+.card{
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.card .image-content{
+    width: 180px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+.card .image-content img{
+    width: 100%;
+}
+
+.card .text-content h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.contact{
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 40px;
+    position: relative;
+  background-color: black;
+}
+.contact h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.3rem;
+    color: red;
+    margin-bottom: 20px;
+}
+.contact h5 {
+  color: white;
+}
+
+.contact .container{
+    width: 70%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 10px;
+}
+
+.information-container{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 20px 0px;
+}
+
+.box{
+    padding: 20px;
+}
+
+.box:nth-of-type(1){
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.information-container h4{
+    color: red;
+}
+
+.box:nth-of-type(2) h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.box:nth-of-type(2) label{
+    display: block;
+    font-size: 1rem;
+    color: white;
+}
+
+.form{
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid red;
+    outline: none;
+    background: none;
+}
+
+#button{
+    padding: 7px 0px;
+    background-color: red;
+    color: white;
+   border: 1px solid white;
+}
+
+footer{
+    width: 100%;
+    min-height: 10vh;
+    background-color: red;
+    color: white;
+}
+
+.footers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:1024px){
+    .navigation-bar .logo{
+        margin-left: 80px;
+    }
+
+    .container{
+        padding-left: 30px;
+    }
+
+    .banner-content .container .text-content h1{
+        font-size: 4.2rem;
+    }
+
+    .banner-content .container .text-content h2{
+        font-size: 3.7rem;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .navigation-bar label #menu{
+        display: block;
+        margin-right: 35px;
+    }
+
+    .navigation-bar .logo{
+        font-size: 2.1rem;
+        margin-left: 50px;
+    }
+
+    .navigation-bar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: 0.5s all ease;
+        background-color: white;
+    }
+
+    .navigation-bar ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    .navigation-bar ul li a{
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+    }
+
+    #check:checked ~ label #menu{
+        display: none;
+    }
+    
+    #check:checked ~ label #cancel{
+        display: block;
+        margin-right: 35px;
+    }
+
+    .banner-content .container{
+        padding-left: 0px;
+    }
+
+    .banner-content .container .text-content{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-content .container .image-content{
+        float: none;
+        width: 100%;
+    }
+
+    .about .container{
+        padding-left: 0px;
+    }
+
+    .about .container .text-content{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .container .image-content{
+        float: none;
+        width: 100%;
+    }
+
+    .contact .container{
+        width: 90%;
+    }
+    
+    .contact h1{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:765px){
+    .banner-content{
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .navigation-bar .logo{
+        margin-left: 40px;
+    }
+
+    .banner-content .container{
+        padding-left: 0px;
+    }
+
+    .banner-content .container .text-content h1{
+        font-size: 3.9rem;
+    }
+
+    .banner-content .container .text-content h2{
+        font-size: 3.6rem;
+    }
+
+    .banner-content .container .text-content p{
+        font-size: 1.1rem;
+    }
+
+    .developers h1{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:415px){
+    .navigation-bar .logo{
+        margin-left: 30px;
+    }
+
+    .navigation-bar label #menu{
+        margin-right: 25px;
+    }
+
+    #check:checked ~ label #cancel{
+        margin-right: 25px;
+    }
+
+    .banner-content{
+        padding-top: 45px;
+    }
+
+    .banner-content .container{
+        padding-left: 0px;
+    }
+    
+    .banner-content .container .text-content h1{
+        font-size: 3.3rem;
+        margin-bottom: -20px;
+    }
+
+    .banner-content .container .text-content h2{
+        font-size: 3rem;
+    }
+
+    .banner-content .container .text-content p{
+        font-size: 1rem;
+    }
+
+    .about .container .text-content p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .banner-content{
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .navigation-bar label #menu{
+        margin-right: 20px;
+        font-size: 25px;
+    }
+
+    #check:checked ~ label #cancel{
+        margin-right: 20px;
+        font-size: 25px;
+    }
+
+    .banner-content .container{
+        padding-left: 0px;
+    }
+    .banner-content .container .text-content h1{
+        font-size: 3.1rem;
+        margin-bottom: -20px;
+    }
+
+    .banner-content .container .text-content h2{
+        font-size: 2.7rem;
+    }
+
+    .banner-content .container .text-content .button{
+        padding: 0.4rem 1.7rem;
+    }
+
+    .navigation-bar ul li a{
+        font-size-adjust: 1rem;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .navigation-bar .logo{
+        margin-left: 20px;
+    }
+
+    .banner-content .container .text-content h1{
+        font-size: 2.8rem;
+        margin-bottom: -20px;
+    }
+
+    .banner-content .container .text-content h2{
+        font-size: 2.3rem;
+    }
+
+    .banner-content .container .text-content .button{
+        padding: 0.4rem 1.4rem;
+    }
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  color: white;
+  max-width: 500px;
+  height: 600px;
+  padding: 10px;
+  background-image: url(https://i.postimg.cc/PqyJqwC3/PHONE-WALLPAPER-HD-DEMON-SLAYER.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+  
+    <title> Simple Webpage </title>
+    <body>
+        </div>
+
+   <section class="banner">
+
+      <nav class="navigation-bar">
+
+         <input type="checkbox" id="check">
+         <label for="check">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-times" id="cancel"></i>
+         </label>
+         <img src="https://i.postimg.cc/5tM5q9GL/heeey.png" class="logo">
+            <ul>
+               <li><a href="#">Home</a></li>
+             <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#contact" >Contact</a></li>
+              <li><a href="javascript:openForm()">Sign-up</a></li>
+            </ul>
+      </nav>
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+         <div class="form-popup" id="myForm">
+           <form action="/action_page.php" class="form-container">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+           <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+           <label for="conpsw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw" required>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+           <button type="submit" class="btn">Sign-Up</button>
+  </form>
+</div>
+        </div>
+      </div>
+    </div>
+      <div class="banner-content">
+         <div class="container">
+     <div class="text-content">
+               <h1>Demon Slayer</h1>
+               <h2>Mugen Train</h2>
+               <p>A boy raised by boars, who wears a boar's head, boards the Infinity Train on a new mission with the Flame Pillar along with another boy who reveals his true power when he sleeps. Their mission is to defeat a demon who has been tormenting people and killing the demon slayers who oppose it.</p>
+               <a href="#" class="button">Learn</a>
+               <a href="#" class="button">Explore</a>
+            </div>
+
+            <div class="image-content">
+               <img src="https://i.postimg.cc/VL7FJDhM/demon-slayer-mugen-train-desktop-wallpaper-by-unitedworldmedia-dej7njq-fullview.jpg">
+            </div>
+         </div>
+         </div>
+   </section>
+        
+   <section class="about" id = "about">
+    <div class="banner-content">
+      <div class="container">
+
+         <div class="image-content">
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/VQGCKyvzIM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+
+         <div class="text-content">
+
+            <h1>About Demon Slayer</h1>
+            <p>A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</p>
+            <a href="#" class="button">Learn More</a>
+         </div>
+      </div>
+   </section>
+   <section class="services" id = "services">
+      <h1>Services</h1>
+<div class="banner-content">
+      <div class="container">
+
+         <div class="card">
+            <div class="image-content">
+               <img src="https://i.postimg.cc/ydn6ygcJ/fun.jpg">
+            </div>
+            <div class="text-content">
+               <h3>Funimation</h3>
+               <h5>Season 1, Season 2 and Demon Slayer Mugen Train</h5>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="image-content">
+               <img src="https://i.postimg.cc/pXKWs6fb/crun.jpg">
+            </div>
+            <div class="text-content">
+               <h3>Crunchyroll</h3>
+               <h5>Season 1, Season 2, Demon Slayer Mugen Train</h5>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="image-content">
+               <img src="https://i.postimg.cc/nhQvSZdV/next.png">
+            </div>
+            <div class="text-content">
+               <h3>Netflix</h3>
+               <h5>Season 1, Season2 and Demon Slayer Mugen Train</h5>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="contact" id = "contact">
+      <h1>Contact Us</h1>
+<div class="banner-content">
+      <div class="container">
+         <div class="box">
+                     <div class="information-container">
+
+               <div class="icon">
+     
+               </div>
+
+               <div class="information">
+                 <img src="https://i.postimg.cc/5tM5q9GL/heeey.png">
+                  <h4> <center> Address</h4>
+                  <h5> <center> Tokyo, Japan</h5>
+               </div>
+            </div>
+
+            <div class="information-container">
+
+               <div class="icon">
+                 
+               </div>
+
+               <div class="information">
+ <img src="https://i.postimg.cc/5tM5q9GL/heeey.png">
+                  <h4><center>Telephone No.</h4>
+                  <h5><center>723-231-005</h5>
+               </div>
+            </div>
+            
+            <div class="information-container">
+               <div class="icon">
+               </div>
+
+               <div class="information">
+                  <img src="https://i.postimg.cc/5tM5q9GL/heeey.png">
+                  <h4><center>Email</h4>
+                  <h5><center>deleongabriel@gmail.com</h5>
+               </div>
+            </div>
+            </div> 
+         <div class="box">
+
+            <h3>Send Message</h3>
+
+            <div class="form">
+               <label>Full Name</label>
+               <input type="text">
+               <label>Email</label>
+               <input type="text">
+               <label>Message</label>
+               <textarea name="" id="" cols="3" rows="3"></textarea>
+            </div>
+
+            <input type="submit" id="button">
+         </div>
+      </div>
+   </section>
+   <footer>
+     <div class="footers">
+     </div>   
+   </footer>
+<script src="myScript.js"></script>
+</body>
+</html>
